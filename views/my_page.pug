@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1.my-title= title
+  p This page is displayed using Pug.
+
+  h2 Items List
+  ul.list-items
+    each item in items
+      li.list-element= item
+      

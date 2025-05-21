@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Ласкаво просимо до #[em LocalLibrary] — простого веб-сайту на Express, створеного як навчальний приклад на Mozilla Developer Network.
+
+  h2 Динамічний контент
+
+  p У бібліотеці є такі записи:
+
+  ul
+    li #[strong Книги:] !{book_count}
+    li #[strong Копії:] !{book_instance_count}
+    li #[strong Доступні копії:] !{book_instance_available_count}
+    li #[strong Автори:] !{author_count}
+    li #[strong Жанри:] !{genre_count}
